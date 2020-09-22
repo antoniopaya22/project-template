@@ -9,6 +9,10 @@
 
 Microservices Project template with Prometheus, Grafana, Node-Exporter, .NET Core Backend and VueJS Frontend.
 
+![Grafana Dashboard](img/grafana.png "Grafana Dashboard")
+![Frontend1](img/frontend1.png "Frontend 1")
+![Frontend2](img/frontend2.png "Frontend 2")
+![Frontend3](img/frontend3.png "Frontend 3")
 ---
 
 ## Building and running
