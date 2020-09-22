@@ -1,2 +1,1 @@
-# project-template
-Microservices Project template with Prometheus, Grafana, Node-Exporter, Backend and Frontend
+# Microservices Project template with Prometheus, Grafana, Node-Exporter, Backend and Frontend
