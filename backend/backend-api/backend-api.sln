@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP.NETCore-API-REST-Template", "ASP.NETCore-API-REST-Template.csproj", "{DF8D41FC-F38E-4FB8-926F-22CDEC05BDE9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NETCore-API-REST-Test", "..\ASP.NETCore-API-REST-Test\ASP.NETCore-API-REST-Test.csproj", "{E2CA03EE-FA64-4EA0-9F60-E28AAD4F07DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "backend-api", "backend-api.csproj", "{DF8D41FC-F38E-4FB8-926F-22CDEC05BDE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{DF8D41FC-F38E-4FB8-926F-22CDEC05BDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF8D41FC-F38E-4FB8-926F-22CDEC05BDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF8D41FC-F38E-4FB8-926F-22CDEC05BDE9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2CA03EE-FA64-4EA0-9F60-E28AAD4F07DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2CA03EE-FA64-4EA0-9F60-E28AAD4F07DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2CA03EE-FA64-4EA0-9F60-E28AAD4F07DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2CA03EE-FA64-4EA0-9F60-E28AAD4F07DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

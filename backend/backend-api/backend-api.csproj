@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>ASP.NETCore_API_REST_Template</RootNamespace>
+    <RootNamespace>backend-api</RootNamespace>
+    <AssemblyName>backend-api</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
