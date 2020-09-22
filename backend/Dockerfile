@@ -4,7 +4,7 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["ASP.NETCore-API-REST-Template.csproj", ""]
+COPY ["ASP.NETCore-API-REST-Template/ASP.NETCore-API-REST-Template.csproj", ""]
 RUN dotnet restore "./ASP.NETCore-API-REST-Template.csproj"
 COPY . .
 WORKDIR "/src/."
