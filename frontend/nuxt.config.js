@@ -29,15 +29,15 @@ export default {
     css: [],
 
     // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-    plugins: [],
+    plugins: [
+        '~/plugins/vue-swal',
+    ],
 
     // Auto import components (https://go.nuxtjs.dev/config-components)
     components: true,
 
     // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
     buildModules: [
-        // https://go.nuxtjs.dev/eslint
-        '@nuxtjs/eslint-module',
         // https://go.nuxtjs.dev/vuetify
         '@nuxtjs/vuetify'
     ],
@@ -45,7 +45,8 @@ export default {
     // Modules (https://go.nuxtjs.dev/config-modules)
     modules: [
         // https://go.nuxtjs.dev/axios
-        '@nuxtjs/axios'
+        '@nuxtjs/axios',
+        '@nuxtjs/dotenv',
     ],
 
     // Axios module configuration (https://go.nuxtjs.dev/config-axios)

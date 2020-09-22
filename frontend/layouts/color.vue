@@ -29,8 +29,6 @@ export default {
 }
 
 .bgimg {
-  background-image: url("~assets/login-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-color: #ffe5b9;
 }
 </style>

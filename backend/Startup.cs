@@ -25,6 +25,13 @@ namespace ASP.NETCore_API_REST_Template
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
+            });
             services.AddControllers();
             services.AddDbContext<DataContext>();
         }
@@ -43,6 +50,8 @@ namespace ASP.NETCore_API_REST_Template
                 context.Database.EnsureDeleted(); //delete db always
                 context.Database.EnsureCreated();
             }
+
+            app.UseCors("CorsPolicy");
 
             app.UseRouting();
 
