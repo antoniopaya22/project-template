@@ -1,7 +1,7 @@
 run:
 	docker-compose up -d
 
-state:
+status:
 	docker-compose ps
 
 stop:
