@@ -29,9 +29,9 @@ namespace ASP.NETCore_API_REST_Template.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
-            var token = Request.Headers["authorization"];
-            if (String.IsNullOrEmpty(token) || !TokenManager.validateToken(token))
-                return Unauthorized();
+            //var token = Request.Headers["authorization"];
+            //if (String.IsNullOrEmpty(token) || !TokenManager.validateToken(token))
+            //    return Unauthorized();
             return await _context.Users.ToListAsync();
         }
 
