@@ -11,5 +11,9 @@ scrape_configs:
       scrape_interval: 10s
       static_configs:
           - targets: ['node-exporter:9100']
+    - job_name: 'backend-resources'
+      scrape_interval: 10s
+      static_configs:
+          - targets: ['backend:5000']
 rule_files:
   - 'alert.rules'
