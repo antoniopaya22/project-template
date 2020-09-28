@@ -1,5 +1,6 @@
 FROM golang:1.12-alpine AS build_base
 
+ENV GO111MODULE=on
 RUN apk add --no-cache git  git gcc g++
 
 # Set the Current Working Directory inside the container
