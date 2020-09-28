@@ -7,6 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files"
 	"github.com/swaggo/gin-swagger"
+	"github.com/zsais/go-gin-prometheus"
 	"io"
 	"os"
 )
@@ -36,6 +37,8 @@ func Setup() *gin.Engine {
 	app.Use(gin.Recovery())
 	app.Use(middlewares.CORS())
 	app.NoRoute(middlewares.NoRouteHandler())
+	p := ginprometheus.NewPrometheus("gin")
+	p.Use(app)
 
 	// Routes
 	// ================== Login Routes
