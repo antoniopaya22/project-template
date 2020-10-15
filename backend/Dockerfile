@@ -1,21 +1,23 @@
-#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+############################################################
+# Dockerfile Node.js - Express
+############################################################
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
-WORKDIR /app
-EXPOSE 80
+FROM node:lts-alpine
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+
+# Crear directorio de trabajo
+RUN mkdir -p /src
+
 WORKDIR /src
-COPY ["backend-api.csproj", ""]
-RUN dotnet restore "./backend-api.csproj"
+
+RUN npm install -g typescript ts-node
+
+# Copia la Aplicación
 COPY . .
-WORKDIR "/src/."
-RUN dotnet build "backend-api.csproj" -c Release -o /app/build
 
-FROM build AS publish
-RUN dotnet publish "backend-api.csproj" -c Release -o /app/publish
+RUN npm install --quiet
 
-FROM base AS final
-WORKDIR /app
-COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "backend-api.dll"]
+EXPOSE 5000
+
+# Inicia la aplicación al iniciar al contenedor
+CMD npm run prod

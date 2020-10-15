@@ -48,7 +48,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     volumes:
-      - ./backend/database.db:/src/database.db
+      - ./backend/db:/src/db
     ports:
       - '5000:5000'
 
